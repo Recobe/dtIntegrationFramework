@@ -1,0 +1,21 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DataHandler.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.2.1",
+    "pg": "^8.3.3",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "launch": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

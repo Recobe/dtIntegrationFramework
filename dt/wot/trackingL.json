@@ -1,0 +1,49 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    {
+      "saref": "https://w3id.org/saref#"
+    }
+  ],
+  "id": "<ThingId>",
+  "title": "Handling Unit",
+  "@type": "HU",
+  "properties": {
+    "longitude": {
+      "title": "Longitude",
+      "type": "double"
+    },
+    "latitude": {
+      "title": "Latitude",
+      "type": "double"
+    },
+    "temperature": {
+      "title": "Temperature",
+      "type": "double"
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "dateTime"
+    },
+    "bpId": {
+      "title": "Business Partner Id",
+      "type": "string"
+    },
+    "materialId": {
+      "title": "Material Id",
+      "type": "string"
+    }
+  },
+  "links": [
+    {
+      "rel": "bp",
+      "href": "http://myerp.com/businesspartner/${bpId}",
+      "type": "application/json"
+    },
+    {
+      "rel": "material",
+      "href": "http://myerp.com/material/${materialId}",
+      "type": "application/json"
+    }
+  ]
+}

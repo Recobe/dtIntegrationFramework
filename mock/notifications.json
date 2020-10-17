@@ -1,0 +1,30 @@
+[
+  {
+    "equipmentId": "84e0fda8-943e-4fac-b50b-91772438c9be",
+    "notificationid": "b3aabcc5-13a8-4b76-bc61-630d297e740d",
+    "notificationtype": 1,
+    "cause": 22,
+    "date": "2020-08-06"
+  },
+  {
+    "equipmentId": "84e0fda8-943e-4fac-b50b-91772438c9be",
+    "notificationid": "2521a846-7efe-4c25-9999-5e05a726dd27",
+    "notificationtype": 1,
+    "cause": 23,
+    "date": "2020-01-02"
+  },
+  {
+    "equipmentId": "8d8e9084-0bf6-43d6-88a2-8e7615b6e2d8",
+    "notificationid": "d272a483-8676-4f35-832c-b6f8e759fb8e",
+    "notificationtype": 3,
+    "cause": 1,
+    "date": "2020-08-06"
+  },
+  {
+    "equipmentId": "8d8e9084-0bf6-43d6-88a2-8e7615b6e2d8",
+    "notificationid": "28ebef27-05ee-4e2f-8d32-e53f720d7124",
+    "notificationtype": 2,
+    "cause": 12,
+    "date": "2020-01-02"
+  }
+]

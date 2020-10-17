@@ -1,0 +1,40 @@
+{
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    {
+      "saref": "https://w3id.org/saref#"
+    }
+  ],
+  "id": "<ThingId>",
+  "title": "Pump",
+  "@type": "Pump",
+  "properties": {
+    "status": {
+      "title": "Status",
+      "type": "integer"
+    },
+    "flowRate": {
+      "title": "Flow Rate",
+      "type": "double"
+    },
+    "vibration": {
+      "title": "Vibration",
+      "type": "double"
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "dateTime"
+    },
+    "equipmentId": {
+      "title": "Equipment Id",
+      "type": "string"
+    }
+  },
+  "links": [
+    {
+      "rel": "notifications",
+      "href": "http://localhost:3000/notification/${equipmentid}",
+      "type": "application/json"
+    }
+  ]
+}

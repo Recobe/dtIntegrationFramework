@@ -1,0 +1,422 @@
+{
+   "assetAdministrationShells": [
+      {
+         "identification": {
+            "id": "http://test.com/aas/id/HU",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "AssetAdministrationShell"
+         },
+         "description": [],
+         "idShort": "HU",
+         "submodels": [
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/HUMeasurements"
+                  }
+               ]
+            },
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/HUMaster"
+                  }
+               ]
+            }
+         ],
+         "conceptDictionaries": [],
+         "views": [],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/aas/id/bp",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "AssetAdministrationShell"
+         },
+         "description": [],
+         "idShort": "bp",
+         "submodels": [
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/location"
+                  }
+               ]
+            }
+         ],
+         "conceptDictionaries": [],
+         "views": [],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/aas/id/material",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "AssetAdministrationShell"
+         },
+         "description": [],
+         "idShort": "material",
+         "submodels": [
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/threshold"
+                  }
+               ]
+            }
+         ],
+         "conceptDictionaries": [],
+         "views": [],
+         "embeddedDataSpecifications": []
+      }
+   ],
+   "submodels": [
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/threshold",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "threshold",
+         "category": "businessData",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "threshold",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/threshold"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            },
+            {
+               "idShort": "material_id",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/threshold"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/location",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "location",
+         "category": "businessData",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "longitude",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/location"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            },
+            {
+               "idShort": "latitude",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/location"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            },
+            {
+               "idShort": "bp_id",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/location"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/HUMeasurements",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "HUMeasurements",
+         "category": "measurement",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "timestamp",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/HUMeasurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "dateTime"
+            },
+            {
+               "idShort": "temperature",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/HUMeasurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            },
+            {
+               "idShort": "longitude",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/HUMeasurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            },
+            {
+               "idShort": "latitude",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/HUMeasurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/Delivery",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "Delivery",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "purchaser",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/Delivery"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "AnnotatedRelationshipElement"
+               },
+               "kind": "Instance",
+               "annotation": []
+            },
+            {
+               "idShort": "deliverable",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/Delivery"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "AnnotatedRelationshipElement"
+               },
+               "kind": "Instance",
+               "annotation": []
+            }
+         ],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/HUMaster",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "HUMaster",
+         "category": "businessData",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "material_id",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/HUMaster"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            },
+            {
+               "idShort": "bp_id",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/HUMaster"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      }
+   ],
+   "conceptDescriptions": [],
+   "assets": []
+}

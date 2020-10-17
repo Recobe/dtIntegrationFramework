@@ -1,0 +1,24 @@
+<SystemUnitClass xmlns="http://www.dke.de/CAEX" Name="Pump" ID="aba20a65-f086-4d31-9bd4-95ac480c429f">
+   <Attribute Name="Id" AttributeDataType="xs:ID" />
+   <Attribute Name="EquipmentId" AttributeDataType="xs:ID" />
+   <InternalElement Name="IoTData" ID="c82083e3-8d9d-46a8-b897-170117b772e3">
+      <Attribute Name="timestamp" AttributeDataType="xs:dateTime" />
+      <Attribute Name="flowRate" AttributeDataType="xs:double" Unit="m^3/s" />
+      <Attribute Name="status" AttributeDataType="xs:int" />
+      <Attribute Name="vibration" AttributeDataType="xs:double" Unit="m/s^2" />
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Group" />
+   </InternalElement>
+   <InternalElement Name="Notifications" ID="1295fc1c-c681-469e-b8cc-99cf2e72d941">
+      <Attribute Name="Id" AttributeDataType="xs:ID" />
+      <Attribute Name="type" AttributeDataType="xs:int" />
+      <Attribute Name="cause" AttributeDataType="xs:int" />
+      <Attribute Name="date" AttributeDataType="xs:date" />
+      <ExternalInterface Name="ExternalInterface" ID="0d83a69a-6aab-4939-9a47-baf895498af3">
+         <Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+         <Attribute Name="refType" AttributeDataType="xs:string">
+            <DefaultValue>oData</DefaultValue>
+         </Attribute>
+      </ExternalInterface>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Group" />
+   </InternalElement>
+</SystemUnitClass>

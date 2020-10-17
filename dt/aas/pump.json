@@ -1,0 +1,292 @@
+{
+   "assetAdministrationShells": [
+      {
+         "identification": {
+            "id": "http://test.com/aas/id/pump",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "AssetAdministrationShell"
+         },
+         "description": [],
+         "idShort": "pump",
+         "submodels": [
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/notification"
+                  }
+               ]
+            },
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/measurements"
+                  }
+               ]
+            },
+            {
+               "keys": [
+                  {
+                     "idType": "IRDI",
+                     "local": true,
+                     "type": "Submodel",
+                     "value": "http://test.com/submodel/id/masterdata"
+                  }
+               ]
+            }
+         ],
+         "conceptDictionaries": [],
+         "views": [],
+         "embeddedDataSpecifications": []
+      }
+   ],
+   "submodels": [
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/notification",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "notification",
+         "category": "businessData",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "NotificationId",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/notification"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            },
+            {
+               "idShort": "equipmentid",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/notification"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            },
+            {
+               "idShort": "NotificationType",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/notification"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "int"
+            },
+            {
+               "idShort": "Cause",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/notification"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "int"
+            },
+            {
+               "idShort": "Date",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/notification"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "date"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/masterdata",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "masterdata",
+         "category": "businessData",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "equipmentId",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/masterdata"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "ID"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      },
+      {
+         "identification": {
+            "id": "http://test.com/submodel/id/measurements",
+            "idType": "IRDI"
+         },
+         "modelType": {
+            "name": "Submodel"
+         },
+         "description": [],
+         "idShort": "measurements",
+         "category": "measurement",
+         "kind": "Instance",
+         "submodelElements": [
+            {
+               "idShort": "Timestamp",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/measurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "dateTime"
+            },
+            {
+               "idShort": "Status",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/measurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "int"
+            },
+            {
+               "idShort": "FlowRate",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/measurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            },
+            {
+               "idShort": "Vibration",
+               "parent": {
+                  "keys": [
+                     {
+                        "idType": "IRDI",
+                        "local": true,
+                        "type": "Submodel",
+                        "value": "http://test.com/submodel/id/measurements"
+                     }
+                  ]
+               },
+               "description": [],
+               "modelType": {
+                  "name": "Property"
+               },
+               "kind": "Instance",
+               "valueType": "double"
+            }
+         ],
+         "embeddedDataSpecifications": []
+      }
+   ],
+   "conceptDescriptions": [],
+   "assets": []
+}
